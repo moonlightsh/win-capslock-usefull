@@ -37,7 +37,7 @@
 
 ; for YENKEE keyboard (which doesnt have " ` ~ " key)
 ;--------------------------------------
-Esc::`
+; Esc::`
 
 
 ; CapsLock Initializer
@@ -448,6 +448,10 @@ CapsLock & =::
 
 ; CapsLock Media Controller
 ;--------------------------------------
-CapsLock & r:: Send, {Volume_Mute}
-CapsLock & w:: Send, {Volume_Down}
-CapsLock & e:: Send, {Volume_Up}
+; CapsLock & r:: Send, {Volume_Mute}
+; CapsLock & w:: Send, {Volume_Down}
+
+; vim like jump
+CapsLock & w:: Send, ^{Right}
+CapsLock & b:: Send, ^{Left}
+; CapsLock & e:: Send, {Volume_Up}
